@@ -9,7 +9,11 @@ export default function Homepage({navigation}){
             <View style={styles.buttonContainer}>
                 <Button 
                 title="Register" 
-                onPress={() => navigation.navigate('Register')}/>   
+                onPress={() => navigation.navigate('Register')}/>
+
+                <Button
+                title="View all users"
+                onPress={()=> navigation.navigate('UserList')}/>
             </View>
         </View>
     );
